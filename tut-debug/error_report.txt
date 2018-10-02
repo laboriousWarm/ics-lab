@@ -1,0 +1,112 @@
+/*
+ * BUG#0
+ * description: 
+     miss semicolon
+ * location: 
+ *   int a = 10  (line 18)
+ * evidence: 
+ *   test.c:19: error: two or more data types in declaration specifiers
+ */
+
+BUG#1
+description:
+  miss head file <stdio.h>   
+location:
+  FILE *file = fopen(fn, "r");
+evidence:
+  error : unknown type name "FILE" 
+
+
+BUG#2
+description:
+  miss semicolon 
+location:
+  enum { buf-size = buf_nrec * 100 }
+  typedef struct record{}
+evidence:
+  error : expected ";", identifier or "(" before struct
+
+
+BUG#3
+description:
+  miss semicolon
+location:
+  typedef struct record {
+    ...
+  }record_t
+  static long cur_rec = 0;
+evidence:
+  error : expected "=",",",";","asm",or"__attribute__" before static
+
+
+BUG#4
+description:
+  type error
+location:
+  static void 
+  gen_rec(record *rec){}
+evidence:
+  error : unknown type name "record"
+
+
+
+BUG#5
+description:
+  miss one brace
+location:
+  if (!file){
+    ...
+  while (...){
+    ...
+  }
+evidence:
+  error : expected declaration or statement at end of input  
+
+
+BUG#6
+description:
+
+location:
+
+evidence:
+
+
+
+
+BUG#7
+description:
+
+location:
+
+evidence:
+
+
+
+
+BUG#8
+description:
+
+location:
+
+evidence:
+
+
+
+
+BUG#9
+description:
+
+location:
+
+evidence:
+
+
+
+
+BUG#10
+description:
+
+location:
+
+evidence:
+
