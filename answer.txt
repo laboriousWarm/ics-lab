@@ -1,0 +1,39 @@
+main   400f66
+isco99sscanf  参数个数
+
+
+phase 1
+【key:  Public speaking is very easy.】
+
+
+phase 2
+数组14相同，25相同，36相同
+【key: 4 5 6 4 5 6】
+
+
+phase 3
+【key: 0 u 86】
+
+
+phase 4
+【key: 6 austinpowers】
+
+
+phase 5
+0-2   1-10  2-6  3-1  4-12  
+5-16  6-9   7-3  8-4  9-7
+任意组合使得和为46
+【key: 134578】
+
+
+phase 6
+node1: 0x603710 0x325	node2: 0x603700 0xbd
+node3: 0x6036f0 0x35f	node4: 0x6036e0 0xfd
+node5: 0x603580 0xbf	node6: 0x000000 0x1b2
+【key: 3 1 6 4 5 2 】
+
+
+secret phase
+【key: 107】
+
+
